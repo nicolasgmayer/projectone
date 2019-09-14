@@ -1,0 +1,65 @@
+html{
+    scroll-behavior: smooth;
+}
+.btn1{
+    border-color: #E12B81;
+    color: #E12B81;
+}
+
+.btn1:hover{
+    color: white;
+    background-color: #E12B81;
+}
+
+.btn2{
+    color: rgb(241, 153, 167);
+}
+
+.btn2:hover{
+    color: whitesmoke;
+}
+
+.rbn{
+    font-size: 14px;
+}
+
+.menu1{
+    
+    top: 90%;
+    left: 80%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.titulo1{
+    color: #E12B81;
+    text-decoration: underline;
+}
+
+.portada{
+    animation: gradientAnimation 5s ease infinite;
+    background: linear-gradient(45deg, rgba(212, 28, 53, 0.411), rgba(184, 206, 211, 0.342), rgba(211, 218, 94, 0.432)) 0 0 / 1000% no-repeat, 
+    url(../integratingProject/paramore4v2.png) 0 0 / cover no-repeat;
+    height: 90vh;
+
+
+}
+
+@keyframes gradientAnimation{
+    0%{background-position: 0% 30%, 0 0;}
+    50%{background-position: 100% 70%, 0 0;}
+    100%{background-position: 0% 30%, 0 0;}
+}
+
+.menubar{
+    background-color: black;
+}
+
+.paramore-log{
+    height: 50px;
+    width: 50px;
+}
+
+.letrasmenu{
+    font-size: 20px;
+}
