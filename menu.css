@@ -1,65 +1,487 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-.btn1{
+
+body {
+    background-image: url(../integratingProject/background.gif);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.btn1 {
     border-color: #E12B81;
     color: #E12B81;
 }
 
-.btn1:hover{
+.btn1:hover {
     color: white;
     background-color: #E12B81;
 }
 
-.btn2{
+.btn2 {
     color: rgb(241, 153, 167);
 }
 
-.btn2:hover{
+.btn2:hover {
     color: whitesmoke;
 }
 
-.rbn{
+.rbn {
     font-size: 14px;
 }
 
-.menu1{
-    
+.menu1 {
     top: 90%;
     left: 80%;
     background-color: transparent;
     z-index: 1000;
 }
 
-.titulo1{
+.titulo1 {
     color: #E12B81;
     text-decoration: underline;
 }
 
-.portada{
+.portada {
     animation: gradientAnimation 5s ease infinite;
-    background: linear-gradient(45deg, rgba(212, 28, 53, 0.411), rgba(184, 206, 211, 0.342), rgba(211, 218, 94, 0.432)) 0 0 / 1000% no-repeat, 
-    url(../integratingProject/paramore4v2.png) 0 0 / cover no-repeat;
+    background: linear-gradient(45deg, rgba(212, 28, 53, 0.411), rgba(184, 206, 211, 0.342), rgba(211, 218, 94, 0.432)) 0 0 / 1000% no-repeat, url(../integratingProject/paramore4v2.png) 0 0 / cover no-repeat;
     height: 90vh;
-
-
 }
 
-@keyframes gradientAnimation{
-    0%{background-position: 0% 30%, 0 0;}
-    50%{background-position: 100% 70%, 0 0;}
-    100%{background-position: 0% 30%, 0 0;}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 30%, 0 0;
+    }
+    50% {
+        background-position: 100% 70%, 0 0;
+    }
+    100% {
+        background-position: 0% 30%, 0 0;
+    }
 }
 
-.menubar{
+.menubar {
     background-color: black;
 }
 
-.paramore-log{
+.paramore-log {
     height: 50px;
     width: 50px;
 }
 
-.letrasmenu{
+.letrasmenu {
     font-size: 20px;
+}
+
+.member1 {
+    border-color: transparent;
+}
+
+.row>.column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Create four equal columns that floats next to eachother */
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Hide the slides by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Caption text */
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+.snip1577 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    background: #000;
+    background-size: 100%;
+}
+
+.snip1577 *,
+.snip1577:before,
+.snip1577:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.snip1577 img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+}
+
+.snip1577:before,
+.snip1577:after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    content: '';
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0;
+}
+
+.snip1577:before {
+    width: 0;
+    height: 1px;
+}
+
+.snip1577:after {
+    height: 0;
+    width: 1px;
+}
+
+.snip1577 figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 20px;
+}
+
+.snip1577 h3,
+.snip1577 h4 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: normal;
+    opacity: 0;
+}
+
+.snip1577 h4 {
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.snip1577 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.snip1577:hover img,
+.snip1577.hover img {
+    zoom: 1;
+    filter: alpha(opacity=20);
+    -webkit-opacity: 0.2;
+    opacity: 0.2;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before,
+.snip1577:hover:after,
+.snip1577.hover:after {
+    opacity: 1;
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before {
+    width: 40px;
+}
+
+.snip1577:hover:after,
+.snip1577.hover:after {
+    height: 40px;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3,
+.snip1577:hover h4,
+.snip1577.hover h4 {
+    opacity: 1;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3 {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.snip1577:hover h4,
+.snip1577.hover h4 {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+/* ALbumes */
+
+.container2 {
+    width: 95%;
+    display: grid !important;
+}
+
+.pokemon {
+    width: 400px;
+    height: 400px;
+    /* center content using flex box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overlay */
+    box-shadow: 0 0 0 200px inset, 0 0 5px grey;
+    /* hover out transition */
+    transition: box-shadow 1s;
+    float: left;
+    margin: 10px;
+}
+
+
+/* pokemone names */
+
+.pokemon::after {
+    width: 80%;
+    height: 80%;
+    display: block;
+    white-space: pre;
+    font: 15pt 'sigmar one';
+    color: white;
+    border: 2px solid;
+    text-align: center;
+    /* center content using flex box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* hover out transition */
+    transition: opacity 1s .5s;
+}
+
+
+/* reveal pokemone picture on hover */
+
+.pokemon:hover {
+    box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+    transition: box-shadow 1s;
+}
+
+
+/* hide pokemone name on hover */
+
+.pokemon:hover::after {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#awkif {
+    background-image: url(../integratingProject/allweknowisfalling-frontal.jpg);
+    color: rgba(36, 109, 70, 0.9);
+    background-size: 100%;
+}
+
+#awkif::after {
+    content: 'All We Know Is Falling';
+}
+
+#riot {
+    background-image: url(../integratingProject/riot-frontal.jpg);
+    color: rgba(255, 71, 71, 0.966);
+    background-size: 100%;
+}
+
+#riot::after {
+    content: 'Riot!'
+}
+
+#tfr {
+    background-image: url(../integratingProject/The_Final_Riot_-Frontal.jpg);
+    color: rgba(31, 29, 29, 0.966);
+    background-size: 100%;
+}
+
+#tfr::after {
+    content: 'The Final Riot!'
+}
+
+#bne {
+    background-image: url(../integratingProject/brandneweyes-frontal.jpg);
+    color: rgba(233, 146, 15, 0.9);
+    background-size: 100%;
+}
+
+#bne::after {
+    content: 'Brand New Eyes'
+}
+
+#pst {
+    background-image: url(../integratingProject/Paramore-Frontal.jpg);
+    color: rgba(0, 2, 122, 0.9);
+    background-size: 100%;
+}
+
+#pst::after {
+    content: 'Paramore Self-Titled'
+}
+
+#al {
+    background-image: url(../integratingProject/AfterLaughter-Frontal.jpg);
+    color: rgba(203, 82, 228, 0.9);
+    background-size: 100%;
+}
+
+#al::after {
+    content: 'After Laughter'
+}
+
+#wrapper {
+    width: 700px;
+    height: 700px;
+    margin: auto;
+}
+
+.description {
+    color: whitesmoke;
+}
+
+.separator {
+    height: 150px;
 }

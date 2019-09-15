@@ -1,46 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
+
     <!-- Font-Awesome icons -->
     <script src="https://use.fontawesome.com/362d51c5a9.js"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- <img src="wpp2bis.png" alt="" class="d-inline-block align-top w-75 h-75 rounded-circle"> -->
+    <!-- <img src="wpp2bis.png" alt="" class="d-inline-block align-top w-75 h-75 rounded-circle"> -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="menu.css">
+    <script src="album.js"></script>
     <style>
         .slider {
-            
             /* background: url("paramore4.jpg"); */
             /* height: 140vh; */
             background-size: cover;
             background-position: center;
         }
-      </style>
+    </style>
     <title>Paramore!</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="home1"></div>
     <nav class="navbar navbar-expand-lg navbar-dark  sticky-top menubar">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- <a href="https://www.paramore.net/" class="btn btn-outline btn2"><i class="fa fa-rocket fa-2x" aria-hidden="true"><span class=" rbn text-center font-italic font-weight-bold">Paramore!</span></i></a> -->
         <div class="paramore-log">
-        <a href="https://www.paramore.net/" class="btn btn-outline btn2 p-0 m-0 w-100 h-100"><img class="float-left p-0 m-0 w-100 h-100" src="https://66.media.tumblr.com/d6092e8a8062b8b815d9ade8eaab9d42/tumblr_oqvp6kom6h1qe0stro1_400.gif" alt=""></a>      
+            <a href="https://www.paramore.net/" class="btn btn-outline btn2 p-0 m-0 w-100 h-100"><img class="float-left p-0 m-0 w-100 h-100" src="https://66.media.tumblr.com/d6092e8a8062b8b815d9ade8eaab9d42/tumblr_oqvp6kom6h1qe0stro1_400.gif" alt=""></a>
         </div>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> 
-          <div class="navbar-nav mr-auto ml-auto text-center font-weight-bold letrasmenu">
-            <a href="#home1" class="nav-item nav-link">Home</a>
-            <a href="#bio" class="nav-item nav-link">Bio</a>
-            <a href="#contact1" class="nav-item nav-link">Members</a>
-            <a href="#songs" class="nav-item nav-link">Songs</a>
-            <a href="#contact1" class="nav-item nav-link">Contact</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav mr-auto ml-auto text-center font-weight-bold letrasmenu">
+                <a href="#home1" class="nav-item nav-link">Home</a>
+                <a href="#bio" class="nav-item nav-link">Bio</a>
+                <a href="#contact1" class="nav-item nav-link">Members</a>
+                <a href="#songs" class="nav-item nav-link">Album</a>
+                <a href="#contact1" class="nav-item nav-link">Contact</a>
+            </div>
         </div>
-  
+
 
     </nav>
 
@@ -55,53 +58,72 @@
     </nav>
 
 
-    <section  class="d-flex justify-content-center align-items-start slider container-fluid portada">
+    <section class="d-flex justify-content-center align-items-start slider container-fluid portada">
 
     </section>
+    <div id="bio"></div>
 
-    <section class="container mt-5 pt-5" id="bio">
-      <h5 class="title mt-4 pt-4 titulo1" >Paramore!</h5>
-      <p class="p-3 mb-3 bg-dark text-white text-justify w-25 mr-4 float-left font-italic font-weight-bold">
-        "Hard Times gonna make you wonder why you even try"
-      </p>
-      <p class="mb-5 pb-5 text-justify font-cambria">
-          Paramore is an American rock band from Franklin, Tennessee, formed in 2004. The band currently consists of 
-          lead vocalist Hayley Williams, guitarist Taylor York and drummer Zac Farro. Williams and Farro are founding 
-          members of the group, while York, a high school friend of the original lineup, joined in 2007. Williams is the 
-          only member listed on the band's recording contract with Warner Music Group's Fueled by Ramen sublabel and the 
-          only member to appear on all five of Paramore's studio albums.                  
-      </p>
+    <section class="container mt-0 pt-0">
+        <h5 class="title mt-4 pt-4 titulo1 ">Paramore!</h5>
+        <p class="p-3 mb-3 bg-dark text-white text-justify w-25 mr-4 float-left font-italic font-weight-bold">
+            "Hard Times gonna make you wonder why you even try"
+        </p>
+        <p class="mb-5 pb-5 text-justify font-cambria description">
+            Paramore is an American rock band from Franklin, Tennessee, formed in 2004. The band currently consists of lead vocalist Hayley Williams, guitarist Taylor York and drummer Zac Farro. Williams and Farro are founding members of the group, while York, a
+            high school friend of the original lineup, joined in 2007. Williams is the only member listed on the band's recording contract with Warner Music Group's Fueled by Ramen sublabel and the only member to appear on all five of Paramore's studio
+            albums.
+        </p>
     </section>
 
-    <section class="m-3 p-3 d-flex d-inline-block justify-content-center align-items-center member1" id="integ">
-        <div class="card-deck d-flex d-inline-block justify-content-center align-items-center">
-      
-            <div class="card"><img src="../integratingProject/tyork.png" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Refresh</h5>
-            </div>
-      
-      
-            <div class="card"><img src="../integratingProject/hwilliams.jpg" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Confortable</h5>
-            </div>
-        
-            <div class="card"><img src="zacfarro1.png" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Paradise</h5>
-                </div>
-      
+    <div class="separator"></div>
+
+    <section class="container d-flex justify-content-center integrantes1">
+        <figure class="snip1577 ">
+            <img class="HayW" src="../integratingProject/img/TY3.gif" alt="sample99" />
+            <figcaption>
+                <h3>Taylor York</h3>
+                <h4>Guitarist</h4>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="snip1577"><img src="../integratingProject/img/HW4.gif" alt="sample109" />
+            <figcaption>
+                <h3>Hayley Williams</h3>
+                <h4>Singer</h4>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="snip1577"><img src="../integratingProject/img/ZF2.gif" alt="sample117" />
+            <figcaption>
+                <h3>Zachary Farro</h3>
+                <h4>Drummer</h4>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
     </section>
+    <section class="container2 d-flex justify-content-center albumes1 ml-5">
+        <div>
+            <div id="awkif" class="pokemon"></div>
+            <div id="riot" class="pokemon"></div>
+            <div id="tfr" class="pokemon"></div>
+            <div id="bne" class="pokemon"></div>
+            <div id="pst" class="pokemon"></div>
+            <div id="al" class="pokemon"></div>
 
-
-    
-
-
+        </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        $(".hover").mouseleave(
+            function() {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+</body>
+
 </html>
