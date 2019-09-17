@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    x
     <!-- Font-Awesome icons -->
     <script src="https://use.fontawesome.com/362d51c5a9.js"></script>
     <!-- Required meta tags -->
@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div id="home1"></div>
     <nav class="navbar navbar-expand-lg navbar-dark  sticky-top menubar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +39,6 @@
             <div class="navbar-nav mr-auto ml-auto text-center font-weight-bold letrasmenu">
                 <a href="#home1" class="nav-item nav-link">Home</a>
                 <a href="#bio" class="nav-item nav-link">Bio</a>
-                <a href="#contact1" class="nav-item nav-link">Members</a>
                 <a href="#songs" class="nav-item nav-link">Album</a>
                 <a href="#contact1" class="nav-item nav-link">Contact</a>
             </div>
@@ -62,6 +62,7 @@
 
     </section>
     <div id="bio"></div>
+    <div> <br></div>
 
     <section class="container mt-0 pt-0">
         <h5 class="title mt-4 pt-4 titulo1 ">Paramore!</h5>
@@ -77,23 +78,24 @@
 
     <div class="separator"></div>
 
-    <section class="container d-flex justify-content-center integrantes1">
+    <section class="container d-flex justify-content-center integrantes1 mb-5">
+
         <figure class="snip1577 ">
-            <img class="HayW" src="../integratingProject/img/TY3.gif" alt="sample99" />
+            <img class="HayW" src="../integratingProject/img/TY3.gif" alt="sample99" style="width:100%" />
             <figcaption>
                 <h3>Taylor York</h3>
                 <h4>Guitarist</h4>
             </figcaption>
             <a href="#"></a>
         </figure>
-        <figure class="snip1577"><img src="../integratingProject/img/HW4.gif" alt="sample109" />
+        <figure class="snip1577"><img src="../integratingProject/img/HW4.gif" alt="sample109" style="width:100%" />
             <figcaption>
                 <h3>Hayley Williams</h3>
                 <h4>Singer</h4>
             </figcaption>
             <a href="#"></a>
         </figure>
-        <figure class="snip1577"><img src="../integratingProject/img/ZF2.gif" alt="sample117" />
+        <figure class="snip1577"><img src="../integratingProject/img/ZF2.gif" alt="sample117" style="width:100%" />
             <figcaption>
                 <h3>Zachary Farro</h3>
                 <h4>Drummer</h4>
@@ -101,16 +103,44 @@
             <a href="#"></a>
         </figure>
     </section>
+    <div id="songs"></div>
+    <div><br> <br></div>
     <section class="container2 d-flex justify-content-center albumes1 ml-5">
         <div>
-            <div id="awkif" class="pokemon"></div>
-            <div id="riot" class="pokemon"></div>
-            <div id="tfr" class="pokemon"></div>
-            <div id="bne" class="pokemon"></div>
-            <div id="pst" class="pokemon"></div>
-            <div id="al" class="pokemon"></div>
+            <div id="awkif" class="pokemon" style="width:100%"></div>
+            <div id="riot" class="pokemon" style="width:100%"></div>
+            <div id="tfr" class="pokemon" style="width:100%"></div>
+            <div id="bne" class="pokemon" style="width:100%"></div>
+            <div id="pst" class="pokemon" style="width:100%"></div>
+            <div id="al" class="pokemon" style="width:100%"></div>
 
         </div>
+    </section>
+
+
+    <div id="contact1"><br><br></div>
+    <section class="d-flex justify-content-center">
+        <footer class="container contacto m-3 p-3 bg-dark ">
+            <div class="">
+
+                <form class="form1">
+                    <div class="title1 font-cambria font-weight-bold">Contact Us</div>
+
+
+                    <input type="text" class="name entry " placeholder="Your Name" />
+
+                    <input type="text" class="email1 entry" placeholder="Email" />
+
+                    <textarea class="message entry" placeholder="Message"></textarea>
+
+                    <button class="submit entry" onclick="thanks()">Submit</button>
+                </form>
+
+                <div class="shadow"></div>
+            </div>
+
+            <script src="app.js"></script>
+        </footer>
     </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
