@@ -356,6 +356,11 @@ img.hover-shadow {
 
 /* ALbumes */
 
+.container2 {
+    width: 95%;
+    display: grid !important;
+}
+
 .pokemon {
     width: 400px;
     height: 400px;
@@ -363,11 +368,11 @@ img.hover-shadow {
     display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
     /* overlay */
     box-shadow: 0 0 0 200px inset, 0 0 5px grey;
     /* hover out transition */
     transition: box-shadow 1s;
+    float: left;
     margin: 10px;
 }
 
@@ -377,6 +382,7 @@ img.hover-shadow {
 .pokemon::after {
     width: 80%;
     height: 80%;
+    display: block;
     white-space: pre;
     font: 15pt 'sigmar one';
     color: white;
@@ -502,6 +508,12 @@ img.hover-shadow {
 
 
 /* This will center the form */
+
+.wrapper {
+    width: 80%;
+    height: 50%;
+    margin: 5% auto 0 auto;
+}
 
 
 /* form animation starts */
