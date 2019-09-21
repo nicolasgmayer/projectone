@@ -6,7 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
+    text-align: center;
+    flex-wrap: wrap;
     /* overlay */
     box-shadow: 0 0 0 200px inset, 0 0 5px grey;
     /* hover out transition */
@@ -16,7 +17,7 @@
         width: 80%;
         height: 80%;
         white-space: pre;
-        font: 15pt 'sigmar one';
+        font: 15pt 'Cambria';
         color: white;
         border: 2px solid;
         text-align: center;
@@ -39,7 +40,7 @@
 
 // Discos
 #awkif {
-    background-image: url(../allweknowisfalling-frontal.jpg);
+    background-image: url(../img/allweknowisfalling-frontal.jpg);
     color: rgba(36, 109, 70, 0.9);
     background-size: 100%;
     &:after {
@@ -48,7 +49,7 @@
 }
 
 #riot {
-    background-image: url(../riot-frontal.jpg);
+    background-image: url(../img/riot-frontal.jpg);
     color: rgba(255, 71, 71, 0.966);
     background-size: 100%;
     &:after {
@@ -57,7 +58,7 @@
 }
 
 #tfr {
-    background-image: url(../The_Final_Riot_-Frontal.jpg);
+    background-image: url(../img/The_Final_Riot_-Frontal.jpg);
     color: rgba(31, 29, 29, 0.966);
     background-size: 100%;
     &:after {
@@ -66,7 +67,7 @@
 }
 
 #bne {
-    background-image: url(../brandneweyes-frontal.jpg );
+    background-image: url(../img/brandneweyes-frontal.jpg );
     color: rgba(233, 146, 15, 0.9);
     background-size: 100%;
     &:after {
@@ -75,7 +76,7 @@
 }
 
 #pst {
-    background-image: url(../Paramore-Frontal.jpg);
+    background-image: url(../img/Paramore-Frontal.jpg);
     color: rgba(0, 2, 122, 0.9);
     background-size: 100%;
     &:after {
@@ -84,10 +85,12 @@
 }
 
 #al {
-    background-image: url(../AfterLaughter-Frontal.jpg);
+    background-image: url(../img/AfterLaughter-Frontal.jpg);
     color: rgba(203, 82, 228, 0.9);
     background-size: 100%;
     &:after {
         content: 'After Laughter';
     }
 }
+
+.margeneditado {}

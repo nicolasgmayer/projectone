@@ -3,21 +3,23 @@
 @import 'menu1.scss';
 @import 'menusticky.scss';
 @import 'mediasq.scss';
+@import 'contacto.scss';
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-image: url(../background.gif);
+    background-image: url(../img/background.gif);
     background-attachment: fixed;
     width: auto;
     background-size: 100%;
     background-position: bottom;
+    overflow-x: hidden;
 }
 
 .portada {
     animation: gradientAnimation 2s ease infinite;
-    background: repeating-linear-gradient(45deg, rgba(212, 28, 53, 0.411), rgba(184, 206, 211, 0.342), rgba(211, 218, 94, 0.432)) 0 0 / 1000% no-repeat, url(../paramore4v2.png) 0 0 / cover no-repeat;
+    background: repeating-linear-gradient(45deg, rgba(212, 28, 53, 0.411), rgba(184, 206, 211, 0.342), rgba(211, 218, 94, 0.432)) 0 0 / 1000% no-repeat, url(../img/paramore4v2.png) 0 0 / cover no-repeat;
     height: 90vh;
 }
 

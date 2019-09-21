@@ -7,7 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  float: left;
+  text-align: center;
+  flex-wrap: wrap;
   /* overlay */
   box-shadow: 0 0 0 200px inset, 0 0 5px grey;
   /* hover out transition */
@@ -18,7 +19,7 @@
   width: 80%;
   height: 80%;
   white-space: pre;
-  font: 15pt "sigmar one";
+  font: 15pt "Cambria";
   color: white;
   border: 2px solid;
   text-align: center;
@@ -39,7 +40,7 @@
 }
 
 #awkif {
-  background-image: url(../allweknowisfalling-frontal.jpg);
+  background-image: url(../img/allweknowisfalling-frontal.jpg);
   color: rgba(36, 109, 70, 0.9);
   background-size: 100%;
 }
@@ -48,7 +49,7 @@
 }
 
 #riot {
-  background-image: url(../riot-frontal.jpg);
+  background-image: url(../img/riot-frontal.jpg);
   color: rgba(255, 71, 71, 0.966);
   background-size: 100%;
 }
@@ -57,7 +58,7 @@
 }
 
 #tfr {
-  background-image: url(../The_Final_Riot_-Frontal.jpg);
+  background-image: url(../img/The_Final_Riot_-Frontal.jpg);
   color: rgba(31, 29, 29, 0.966);
   background-size: 100%;
 }
@@ -66,7 +67,7 @@
 }
 
 #bne {
-  background-image: url(../brandneweyes-frontal.jpg);
+  background-image: url(../img/brandneweyes-frontal.jpg);
   color: rgba(233, 146, 15, 0.9);
   background-size: 100%;
 }
@@ -75,7 +76,7 @@
 }
 
 #pst {
-  background-image: url(../Paramore-Frontal.jpg);
+  background-image: url(../img/Paramore-Frontal.jpg);
   color: rgba(0, 2, 122, 0.9);
   background-size: 100%;
 }
@@ -84,12 +85,18 @@
 }
 
 #al {
-  background-image: url(../AfterLaughter-Frontal.jpg);
+  background-image: url(../img/AfterLaughter-Frontal.jpg);
   color: rgba(203, 82, 228, 0.9);
   background-size: 100%;
 }
 #al:after {
   content: "After Laughter";
+}
+
+.container3 {
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .snip1577 {
@@ -194,8 +201,6 @@
 }
 
 .menu1 {
-  top: 90%;
-  left: 80%;
   background-color: transparent;
   z-index: 1000;
 }
@@ -369,27 +374,215 @@ img.hover-shadow {
   .parmenu1 {
     display: none;
   }
+
+  .members1 {
+    display: none;
+  }
+
+  .container4 {
+    width: 90% !important;
+    height: 700px !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   .parmenu2 {
     display: none;
   }
+
+  .dicospar {
+    width: 300px;
+    height: 300px;
+    display: flex;
+  }
+
+  .form1 {
+    width: 90% !important;
+    height: 400px;
+  }
+
+  .container4 {
+    height: 500px;
+  }
+
+  .separator {
+    height: 50px;
+  }
+
+  .title1 {
+    font-size: 14px !important;
+  }
 }
+@media only screen and (max-width: 320px) {
+  .title1 {
+    width: 100% !important;
+  }
+
+  .form1 {
+    width: 90% !important;
+  }
+}
+.contactBody {
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
+}
+
+.title1 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 42px;
+  color: #1a1212;
+}
+
+#title-Tag-Line {
+  font-size: 20px;
+}
+
+/* This will center the form */
+/* form animation starts */
+.form1 {
+  background: #EBEBEB;
+  text-align: center;
+  box-shadow: 0px 0px 20px 5px #AAA;
+  border-radius: 10px;
+  width: 50%;
+  height: 500px;
+  margin: 30px auto 0 auto;
+  padding: 10px 10px;
+  animation: bounce 1.5s infinite;
+}
+
+.name {
+  background-color: #f0862f;
+  border-bottom: 5px solid #d87423;
+  color: white;
+  width: 90%;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  font-size: 20px;
+}
+
+.name:hover {
+  background-color: #f0862f;
+  border-bottom: 5px solid #d87423;
+  height: 40px;
+  width: 95%;
+}
+
+.email1 {
+  background-color: #f0862f;
+  border-bottom: 5px solid #d87423;
+  height: 50px;
+  width: 90%;
+  color: white;
+}
+
+.email1:hover {
+  background-color: #f0862f;
+  border-bottom: 5px solid #d87423;
+  height: 40px;
+  width: 95%;
+}
+
+.message {
+  background-color: #f0862f;
+  border-bottom: 5px solid #d87423;
+  overflow: hidden;
+  height: 100px;
+  width: 90%;
+  color: white;
+}
+
+.message:hover {
+  background-color: #f0862f;
+  border-bottom: 5px solid #d87423;
+  height: 100px;
+  width: 95%;
+}
+
+.submit {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #2DD7BB;
+  border: none;
+  border-bottom: 5px solid #CB64B2;
+  transform: translateY(-120px);
+}
+
+.submit:hover {
+  border-bottom: 5px solid #CB64B2;
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+}
+
+.entry {
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 0px 25px 2px #AAA;
+}
+
+/* Shadow to make it look like form is floating  */
+.shadow {
+  box-shadow: 0px 0px 60px 5px #AAA;
+  opacity: 0.5;
+  border-radius: 100px;
+  width: 50%;
+  margin: 50px auto 0 auto;
+  padding: 0 20px;
+  animation: shadow 1.5s infinite;
+}
+
+.submit {
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  color: white;
+  background-color: #EE78D1;
+  border: none;
+  border-bottom: 5px solid #CB64B2;
+  margin-top: 150px;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translate(0, 8px);
+  }
+}
+@keyframes shadow {
+  50% {
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+.container4 {
+  width: 100%;
+  height: 700px;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-image: url(../background.gif);
+  background-image: url(../img/background.gif);
   background-attachment: fixed;
   width: auto;
   background-size: 100%;
   background-position: bottom;
+  overflow-x: hidden;
 }
 
 .portada {
   animation: gradientAnimation 2s ease infinite;
-  background: repeating-linear-gradient(45deg, rgba(212, 28, 53, 0.411), rgba(184, 206, 211, 0.342), rgba(211, 218, 94, 0.432)) 0 0/1000% no-repeat, url(../paramore4v2.png) 0 0/cover no-repeat;
+  background: repeating-linear-gradient(45deg, rgba(212, 28, 53, 0.411), rgba(184, 206, 211, 0.342), rgba(211, 218, 94, 0.432)) 0 0/1000% no-repeat, url(../img/paramore4v2.png) 0 0/cover no-repeat;
   height: 90vh;
 }
 
