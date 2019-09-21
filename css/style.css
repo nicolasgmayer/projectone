@@ -1,644 +1,408 @@
-html {
-    scroll-behavior: smooth;
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+.dicospar {
+  width: 400px;
+  height: 400px;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  /* overlay */
+  box-shadow: 0 0 0 200px inset, 0 0 5px grey;
+  /* hover out transition */
+  transition: box-shadow 1s;
+  margin: 10px;
+}
+.dicospar:after {
+  width: 80%;
+  height: 80%;
+  white-space: pre;
+  font: 15pt "sigmar one";
+  color: white;
+  border: 2px solid;
+  text-align: center;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* hover out transition */
+  transition: opacity 1s 0.5s;
+}
+.dicospar:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+.dicospar:hover::after {
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-body {
-    background-image: url(../integratingProject/background.gif);
-    background-attachment: fixed;
-    background-size: 100%;
-    background-position: bottom;
+#awkif {
+  background-image: url(../allweknowisfalling-frontal.jpg);
+  color: rgba(36, 109, 70, 0.9);
+  background-size: 100%;
+}
+#awkif:after {
+  content: "All We Know Is Falling";
 }
 
-.btn1 {
-    border-color: #E12B81;
-    color: #E12B81;
+#riot {
+  background-image: url(../riot-frontal.jpg);
+  color: rgba(255, 71, 71, 0.966);
+  background-size: 100%;
+}
+#riot:after {
+  content: "Riot!";
 }
 
-.btn1:hover {
-    color: white;
-    background-color: #E12B81;
+#tfr {
+  background-image: url(../The_Final_Riot_-Frontal.jpg);
+  color: rgba(31, 29, 29, 0.966);
+  background-size: 100%;
+}
+#tfr:after {
+  content: "The Final Riot!";
 }
 
-.btn2 {
-    color: rgb(241, 153, 167);
+#bne {
+  background-image: url(../brandneweyes-frontal.jpg);
+  color: rgba(233, 146, 15, 0.9);
+  background-size: 100%;
+}
+#bne:after {
+  content: "Brand New Eyes";
 }
 
-.btn2:hover {
-    color: whitesmoke;
+#pst {
+  background-image: url(../Paramore-Frontal.jpg);
+  color: rgba(0, 2, 122, 0.9);
+  background-size: 100%;
+}
+#pst:after {
+  content: "Paramore Self-Titled";
 }
 
-.rbn {
-    font-size: 14px;
+#al {
+  background-image: url(../AfterLaughter-Frontal.jpg);
+  color: rgba(203, 82, 228, 0.9);
+  background-size: 100%;
+}
+#al:after {
+  content: "After Laughter";
+}
+
+.snip1577 {
+  font-family: "Montserrat", Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
+  background-size: 100%;
+}
+.snip1577 *, .snip1577:before, .snip1577:after {
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+.snip1577 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+.snip1577:before, .snip1577:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: "";
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+.snip1577:before {
+  width: 0;
+  height: 1px;
+}
+.snip1577:after {
+  height: 0;
+  width: 1px;
+}
+.snip1577 figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+.snip1577 h3, .snip1577 h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+.snip1577 h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+.snip1577 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1577:hover img,
+.snip1577 .hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+.snip1577:hover:before, .snip1577.hover:before, .snip1577:hover:after, .snip1577.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+.snip1577:hover:before, .snip1577.hover:before {
+  width: 40px;
+}
+.snip1577:hover:after, .snip1577.hover:after {
+  height: 40px;
+}
+.snip1577:hover h3, .snip1577.hover h3, .snip1577:hover h4, .snip1577.hover h4 {
+  opacity: 1;
+}
+.snip1577:hover h3, .snip1577.hover h3 {
+  transition-delay: 0.3s;
+}
+.snip1577:hover h4, .snip1577.hover h4 {
+  transition-delay: 0.3s;
+}
+
+.description {
+  color: whitesmoke;
+}
+
+.separator {
+  height: 150px;
 }
 
 .menu1 {
-    top: 90%;
-    left: 80%;
-    background-color: transparent;
-    z-index: 1000;
+  top: 90%;
+  left: 80%;
+  background-color: transparent;
+  z-index: 1000;
 }
 
 .titulo1 {
-    color: #E12B81;
-    text-decoration: underline;
-}
-
-.portada {
-    animation: gradientAnimation 2s ease infinite;
-    background: linear-gradient(45deg, rgba(212, 28, 53, 0.411), rgba(184, 206, 211, 0.342), rgba(211, 218, 94, 0.432)) 0 0 / 1000% no-repeat, url(../integratingProject/paramore4v2.png) 0 0 / cover no-repeat;
-    height: 90vh;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 30%, 0 0;
-    }
-    50% {
-        background-position: 100% 70%, 0 0;
-    }
-    100% {
-        background-position: 0% 30%, 0 0;
-    }
+  color: #E12B81;
+  text-decoration: underline;
 }
 
 .menubar {
-    background-color: black;
+  background-color: black;
 }
 
 .paramore-log {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .letrasmenu {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .member1 {
-    border-color: transparent;
+  border-color: transparent;
 }
 
-.row>.column {
-    padding: 0 8px;
+.row .column {
+  padding: 0 8px;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-
 
 /* Create four equal columns that floats next to eachother */
-
 .column {
-    float: left;
-    width: 25%;
+  float: left;
+  width: 25%;
 }
-
 
 /* The Modal (background) */
-
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: black;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
 }
-
 
 /* Modal Content */
-
 .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 1200px;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
 }
 
-
 /* The Close Button */
-
 .close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 /* Hide the slides by default */
-
 .mySlides {
-    display: none;
+  display: none;
 }
-
 
 /* Next & previous buttons */
-
 .prev,
 .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
-
 
 /* Position the "next button" to the right */
-
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-
 
 /* On hover, add a black background color with a little bit see-through */
-
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 /* Number text (1/3 etc) */
-
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-
 /* Caption text */
-
 .caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
 }
 
 img.demo {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .active,
 .demo:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 img.hover-shadow {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
-.snip1577 {
-    font-family: 'Montserrat', Arial, sans-serif;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    margin: 10px;
-    min-width: 230px;
-    max-width: 315px;
-    width: 100%;
-    color: #fff;
-    text-align: left;
-    font-size: 16px;
-    background: #000;
-    background-size: 100%;
+.btn1 {
+  border-color: #E12B81;
+  background-color: transparent;
+  color: #E12B81;
+}
+.btn1:hover {
+  color: white;
+  background-color: #E12B81;
 }
 
-.snip1577 *,
-.snip1577:before,
-.snip1577:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+.btn2 {
+  color: #f199a7;
+}
+.btn2 .btn2:hover {
+  color: whitesmoke;
 }
 
-.snip1577 img {
-    max-width: 100%;
-    backface-visibility: hidden;
-    vertical-align: top;
+@media only screen and (min-width: 768px) {
+  .parmenu1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .parmenu2 {
+    display: none;
+  }
+}
+html {
+  scroll-behavior: smooth;
 }
 
-.snip1577:before,
-.snip1577:after {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    content: '';
-    background-color: #fff;
-    z-index: 1;
-    opacity: 0;
+body {
+  background-image: url(../background.gif);
+  background-attachment: fixed;
+  width: auto;
+  background-size: 100%;
+  background-position: bottom;
 }
 
-.snip1577:before {
-    width: 0;
-    height: 1px;
+.portada {
+  animation: gradientAnimation 2s ease infinite;
+  background: repeating-linear-gradient(45deg, rgba(212, 28, 53, 0.411), rgba(184, 206, 211, 0.342), rgba(211, 218, 94, 0.432)) 0 0/1000% no-repeat, url(../paramore4v2.png) 0 0/cover no-repeat;
+  height: 90vh;
 }
 
-.snip1577:after {
-    height: 0;
-    width: 1px;
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 30%, 0 0;
+  }
+  50% {
+    background-position: 100% 70%, 0 0;
+  }
+  100% {
+    background-position: 0% 30%, 0 0;
+  }
 }
 
-.snip1577 figcaption {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 15px 20px;
-}
-
-.snip1577 h3,
-.snip1577 h4 {
-    margin: 0;
-    font-size: 1.1em;
-    font-weight: normal;
-    opacity: 0;
-}
-
-.snip1577 h4 {
-    font-size: .8em;
-    text-transform: uppercase;
-}
-
-.snip1577 a {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.snip1577:hover img,
-.snip1577.hover img {
-    zoom: 1;
-    filter: alpha(opacity=20);
-    -webkit-opacity: 0.2;
-    opacity: 0.2;
-}
-
-.snip1577:hover:before,
-.snip1577.hover:before,
-.snip1577:hover:after,
-.snip1577.hover:after {
-    opacity: 1;
-    -webkit-transition-delay: 0.25s;
-    transition-delay: 0.25s;
-}
-
-.snip1577:hover:before,
-.snip1577.hover:before {
-    width: 40px;
-}
-
-.snip1577:hover:after,
-.snip1577.hover:after {
-    height: 40px;
-}
-
-.snip1577:hover h3,
-.snip1577.hover h3,
-.snip1577:hover h4,
-.snip1577.hover h4 {
-    opacity: 1;
-}
-
-.snip1577:hover h3,
-.snip1577.hover h3 {
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-}
-
-.snip1577:hover h4,
-.snip1577.hover h4 {
-    -webkit-transition-delay: 0.35s;
-    transition-delay: 0.35s;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
-
-/* ALbumes */
-
-.container2 {
-    width: 95%;
-    display: grid !important;
-}
-
-.pokemon {
-    width: 400px;
-    height: 400px;
-    /* center content using flex box */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* overlay */
-    box-shadow: 0 0 0 200px inset, 0 0 5px grey;
-    /* hover out transition */
-    transition: box-shadow 1s;
-    float: left;
-    margin: 10px;
-}
-
-
-/* pokemone names */
-
-.pokemon::after {
-    width: 80%;
-    height: 80%;
-    display: block;
-    white-space: pre;
-    font: 15pt 'sigmar one';
-    color: white;
-    border: 2px solid;
-    text-align: center;
-    /* center content using flex box */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* hover out transition */
-    transition: opacity 1s .5s;
-}
-
-
-/* reveal pokemone picture on hover */
-
-.pokemon:hover {
-    box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
-    transition: box-shadow 1s;
-}
-
-
-/* hide pokemone name on hover */
-
-.pokemon:hover::after {
-    opacity: 0;
-    transition: opacity .5s;
-}
-
-#awkif {
-    background-image: url(../integratingProject/allweknowisfalling-frontal.jpg);
-    color: rgba(36, 109, 70, 0.9);
-    background-size: 100%;
-}
-
-#awkif::after {
-    content: 'All We Know Is Falling';
-}
-
-#riot {
-    background-image: url(../integratingProject/riot-frontal.jpg);
-    color: rgba(255, 71, 71, 0.966);
-    background-size: 100%;
-}
-
-#riot::after {
-    content: 'Riot!'
-}
-
-#tfr {
-    background-image: url(../integratingProject/The_Final_Riot_-Frontal.jpg);
-    color: rgba(31, 29, 29, 0.966);
-    background-size: 100%;
-}
-
-#tfr::after {
-    content: 'The Final Riot!'
-}
-
-#bne {
-    background-image: url(../integratingProject/brandneweyes-frontal.jpg);
-    color: rgba(233, 146, 15, 0.9);
-    background-size: 100%;
-}
-
-#bne::after {
-    content: 'Brand New Eyes'
-}
-
-#pst {
-    background-image: url(../integratingProject/Paramore-Frontal.jpg);
-    color: rgba(0, 2, 122, 0.9);
-    background-size: 100%;
-}
-
-#pst::after {
-    content: 'Paramore Self-Titled'
-}
-
-#al {
-    background-image: url(../integratingProject/AfterLaughter-Frontal.jpg);
-    color: rgba(203, 82, 228, 0.9);
-    background-size: 100%;
-}
-
-#al::after {
-    content: 'After Laughter'
-}
-
-#wrapper {
-    width: 700px;
-    height: 700px;
-    margin: auto;
-}
-
-.description {
-    color: whitesmoke;
-}
-
-.separator {
-    height: 150px;
-}
-
-.contactBody {
-    background-color: white;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 700px;
-}
-
-.title1 {
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
-    padding-bottom: 10px;
-    font-size: 42px;
-    color: rgb(26, 18, 18);
-}
-
-#title-Tag-Line {
-    font-size: 20px;
-}
-
-
-/* This will center the form */
-
-.wrapper {
-    width: 80%;
-    height: 50%;
-    margin: 5% auto 0 auto;
-}
-
-
-/* form animation starts */
-
-.form1 {
-    background: #EBEBEB;
-    text-align: center;
-    box-shadow: 0px 0px 20px 5px #AAA;
-    border-radius: 10px;
-    width: 45%;
-    height: 500px;
-    margin: 30px auto 0 auto;
-    padding: 10px 10px;
-    animation: bounce 1.5s infinite;
-}
-
-.name {
-    background-color: rgb(240, 134, 47);
-    border-bottom: 5px solid rgb(216, 116, 35);
-    color: white;
-    width: 300px;
-}
-
- ::-webkit-input-placeholder {
-    color: white;
-    font-size: 20px;
-}
-
-.name:hover {
-    background-color: rgb(240, 134, 47);
-    border-bottom: 5px solid rgb(216, 116, 35);
-    height: 40px;
-    width: 400px;
-}
-
-.email1 {
-    background-color: rgb(240, 134, 47);
-    border-bottom: 5px solid rgb(216, 116, 35);
-    height: 50px;
-    width: 300px;
-    color: white;
-}
-
-.email1:hover {
-    background-color: rgb(240, 134, 47);
-    border-bottom: 5px solid rgb(216, 116, 35);
-    height: 40px;
-    width: 380px;
-}
-
-.message {
-    background-color: rgb(240, 134, 47);
-    border-bottom: 5px solid rgb(216, 116, 35);
-    overflow: hidden;
-    height: 100px;
-    width: 300px;
-    color: white;
-}
-
-.message:hover {
-    background-color: rgb(240, 134, 47);
-    border-bottom: 5px solid rgb(216, 116, 35);
-    height: 100px;
-    width: 370px;
-}
-
-.submit {
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #2DD7BB;
-    border: none;
-    border-bottom: 5px solid #CB64B2;
-    transform: translateY(-120px);
-}
-
-.submit:hover {
-    border-bottom: 5px solid #CB64B2;
-    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
-}
-
-.entry {
-    display: block;
-    margin: 30px auto;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    transition: all 0.5s ease 0s;
-    box-shadow: 0px 0px 25px 2px #AAA;
-}
-
-
-/* Shadow to make it look like form is floating  */
-
-.shadow {
-    box-shadow: 0px 0px 60px 5px #AAA;
-    opacity: 0.5;
-    border-radius: 100px;
-    width: 50%;
-    margin: 50px auto 0 auto;
-    padding: 0 20px;
-    animation: shadow 1.5s infinite;
-}
-
-.submit {
-    border-radius: 5px;
-    padding: 10px;
-    width: 150px;
-    color: white;
-    background-color: #EE78D1;
-    border: none;
-    border-bottom: 5px solid #CB64B2;
-    margin-top: 150px;
-}
-
-@keyframes bounce {
-    0% {}
-    50% {
-        transform: translate(0, 8px);
-    }
-}
-
-@keyframes shadow {
-    0% {}
-    50% {
-        opacity: 0.8;
-        width: 50%;
-    }
-}
+/*# sourceMappingURL=style.css.map */
