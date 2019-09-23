@@ -12,6 +12,12 @@
 }
 
 @media only screen and(max-width: 768px) {
+    body {
+        background-image: url(../img/background2.jpg)!important;
+        background-position: center !important;
+        background-repeat: no-repeat!important;
+        background-size: cover !important;
+    }
     .parmenu2 {
         display: none;
     }
@@ -42,5 +48,12 @@
     }
     .form1 {
         width: 90% !important;
+    }
+}
+
+@media only screen and(max-width: 550px) {
+    .portada {
+        background-image: url(../img/portadamovil.jpg)!important;
+        background-size: 100% !important;
     }
 }
