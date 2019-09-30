@@ -179,11 +179,12 @@ footer {
 }
 
 .footer1 {
-    background-image: url(../img/footer1.png);
-    background-size: 100% !important;
-    height: 50vh;
-    background-repeat: no-repeat;
-    // background-attachment: fixed;
+    background-image: url(../img/footer1v2.png);
+    background-size: cover !important;
+    height: 55vh;
+    width: 90vw;
+    // background-repeat: no-repeat;
+    background-attachment: scroll !important;
     background-position-y: -130px;
-    background-attachment: fixed;
+    background-position: top;
 }

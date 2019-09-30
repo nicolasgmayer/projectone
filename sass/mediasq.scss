@@ -16,7 +16,7 @@
         background-image: url(../img/background2.jpg)!important;
         background-position: center !important;
         background-repeat: no-repeat!important;
-        background-size: cover !important;
+        background-size: auto !important;
     }
     .parmenu2 {
         display: none;
@@ -55,5 +55,6 @@
     .portada {
         background-image: url(../img/portadamovil.jpg)!important;
         background-size: 100% !important;
+        background-position: top !important;
     }
 }

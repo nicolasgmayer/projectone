@@ -4,8 +4,15 @@
   text-align: center;
 }
 
+.row1 {
+  display: flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .container6 {
-  width: 100%;
+  width: auto;
 }
 
 .dicospar {
@@ -396,7 +403,7 @@ img.hover-shadow {
     background-image: url(../img/background2.jpg) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-size: auto !important;
   }
 
   .parmenu2 {
@@ -439,6 +446,7 @@ img.hover-shadow {
   .portada {
     background-image: url(../img/portadamovil.jpg) !important;
     background-size: 100% !important;
+    background-position: top !important;
   }
 }
 .contactBody {
@@ -768,12 +776,13 @@ footer {
   }
 }
 .footer1 {
-  background-image: url(../img/footer1.png);
-  background-size: 100% !important;
-  height: 50vh;
-  background-repeat: no-repeat;
+  background-image: url(../img/footer1v2.png);
+  background-size: cover !important;
+  height: 55vh;
+  width: 90vw;
+  background-attachment: scroll !important;
   background-position-y: -130px;
-  background-attachment: fixed;
+  background-position: top;
 }
 
 html {
@@ -785,7 +794,6 @@ body {
   background-attachment: fixed;
   background-size: 100%;
   background-position: bottom;
-  overflow-x: hidden;
 }
 
 .portada {
